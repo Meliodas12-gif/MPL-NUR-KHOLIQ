@@ -19,7 +19,7 @@ class AboutSection extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(30),
           child: const Text(
-              "Mahasiswa STMIK WIDYA UTAMA Program Studi Teknik Informatika Semester 6."),
+              "Lulusan SMK Teknik Komputer Jaringan Dan Sedabg Lanjut Kuliah Di Universitas STMIK WIDYA UTAMA Jurusan Teknik Informatika."),
         ),
       ),
     );

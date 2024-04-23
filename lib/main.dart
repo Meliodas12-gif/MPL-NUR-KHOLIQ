@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'sections/about_section.dart';
 import 'sections/contact_section.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -25,17 +26,17 @@ class ProfilePage extends StatefulWidget {
 class _ProfilePageState extends State<ProfilePage> {
   List<Tab> tabs = [
     const Tab(
-      text: "About",
+      text: "Tentang Saya",
       icon: Icon(
         Icons.account_box,
         color: Colors.white,
       ),
     ),
     const Tab(
-      text: "Contact",
+      text: "Kontak",
       icon: Icon(
         Icons.account_box,
-        color: Colors.white,
+        color: Color.fromARGB(255, 0, 0, 0),
       ),
     ),
   ];
@@ -46,9 +47,9 @@ class _ProfilePageState extends State<ProfilePage> {
       length: tabs.length,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromARGB(255, 198, 229, 243),
+          backgroundColor: Color.fromARGB(255, 196, 107, 72),
           titleTextStyle: const TextStyle(
-            color: Colors.white,
+            color: Color.fromARGB(255, 223, 0, 0),
           ),
           toolbarHeight: 230,
           title: Padding(
@@ -86,9 +87,9 @@ class _ProfilePageState extends State<ProfilePage> {
     return const Padding(
       padding: EdgeInsets.only(top: 8.0),
       child: Text(
-        "AKHLIS NUR AZIZAH",
+        "Nur Kholiq",
         style: TextStyle(
-          fontSize: 15,
+          fontSize: 18,
           fontWeight: FontWeight.bold,
           color: Color.fromARGB(255, 48, 41, 41),
         ),
@@ -100,9 +101,9 @@ class _ProfilePageState extends State<ProfilePage> {
     return const Padding(
       padding: EdgeInsets.only(top: 8.0),
       child: Text(
-        "STI202102276",
+        "STI202102234",
         style: TextStyle(
-          fontSize: 10,
+          fontSize: 14,
           fontWeight: FontWeight.bold,
           color: Color.fromARGB(255, 48, 41, 41),
         ),
@@ -122,7 +123,7 @@ class _ProfilePageState extends State<ProfilePage> {
           radius: 75,
           backgroundColor: Colors.transparent,
           backgroundImage: AssetImage(
-            'img/al.jpg',
+            'img/k.jpg',
           ),
         ));
   }
